@@ -13,19 +13,23 @@ h1 {
 h2 {
   text-align: center;
 }
+
 .container-fluid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
 
 }
-#item {
+#columnify {
+  display: inline-;
   flex: auto;
+  flex-flow: row;
   max-width: 50%;
   font-size: 20px;
   font-weight: 400;
+  justify-content: space-between;
 }
 
 .row {
@@ -43,4 +47,7 @@ h2 {
 input {
   color: black;
 
+}
+select {
+  float: right;
 }

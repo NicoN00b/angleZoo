@@ -11,8 +11,8 @@ import { Animal } from './animal.model';
       <option value="youngGun">Young Guns </option>
     </select>
 
-    <div id="item">
-      <p [class]="localColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | animalage:filterByAge">{{currentAnimal.species}}<br>
+    <div id="columnify">
+      <div [class]="localColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | animalage:filterByAge">{{currentAnimal.species}}<br>
       {{currentAnimal.name}}
       <br>
       Age: {{currentAnimal.age}}
@@ -27,7 +27,7 @@ import { Animal } from './animal.model';
       <br>
       Dislikes: {{currentAnimal.dislikes}}
       <br>
-      <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button></p>
+      <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button></div>
     </div>
   </div>
   `

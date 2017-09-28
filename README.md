@@ -1,37 +1,32 @@
-# _{Application Name}_
+# Angular Zoo App
 
-#### _{Brief description of application}, {Date of current version}_
+####  This is an informational app for "Zoo" wayfinding 9.28.2017
 
-#### By _**{List of contributors}**_
+#### By NicoN00b
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This is a simple app designed for scalability.  It can show a list of animals at a "zoo" with various attributes.  These animals can be filtered by a pipe for age and can be edited.  New animals can also be added.  In the future, this site could be transitioned to a multiple page platform and could be connected to a firebase JSON for date persistence.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* To run this app you will need to node.js installed.
+* After installing the package manager, open your terminal and run:
+  * npm install (this should load all the node dependencies needed)
+  * bower install (this should make sure the front end is ready to go)
+  * gulp build (create the build files necessary to compile it all together)
+  * gulp serve (run it on the localhost:3000)
+* That should be it.
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
-
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+None at this time.
+_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
-
+This App uses typescript, angular, node, gulp, bower (and many more dependencies you can view in the package.json). I wrote it in Atom and utilized JSHint to keep it all together.  Shout out to CSS-Tricks for all the good info.
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2017 Creative Commons, Open Source, Use at Your Own Risk. NicoN00b
