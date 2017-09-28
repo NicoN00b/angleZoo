@@ -6,27 +6,66 @@ import { Animal } from './animal.model';
   template: `
   <div>
     <div *ngIf="childSelectedAnimal">
-      <h3>{{childSelectedAnimal.species}} {{childSelectedAnimal.name}}</h3>
-      <h3>Edit Info</h3>
-      <label>Enter Animal Species:</label>
-      <input [(ngModel)]="childSelectedAnimal.species">
-      <label>Enter Animal Name:</label>
-      <input [(ngModel)]="childSelectedAnimal.name">
-      <label>Enter Animal Age:</label>
-      <input [(ngModel)]="childSelectedAnimal.age">
-      <label>Enter Animal Diet:</label>
-      <input [(ngModel)]="childSelectedAnimal.diet">
-      <label>Enter Animal Location:</label>
-      <input [(ngModel)]="childSelectedAnimal.location">
-      <label>Enter Animal Sex:</label>
-      <input [(ngModel)]="childSelectedAnimal.sex">
-      <label>Enter Animal Likes:</label>
-      <input [(ngModel)]="childSelectedAnimal.likes">
-      <label>Enter Animal Dislikes:</label>
-      <input [(ngModel)]="childSelectedAnimal.dislikes">
-      <button (click)="doneButtonClicked()">Finish and Save</button>
+      <div class="row">
+        <h2>{{childSelectedAnimal.species}} {{childSelectedAnimal.name}}</h2>
+        <h2>Edit Info</h2>
+        <div class="col-md-6">
+          <label>Enter Animal Species:</label>
+          <br>
+          <br>
+          <input [(ngModel)]="childSelectedAnimal.species">
+          <br>
+          <br>
+          <label>Enter Animal Name:</label>
+          <br>
+          <br>
+          <input [(ngModel)]="childSelectedAnimal.name">
+          <br>
+          <br>
+          <label>Enter Animal Age:</label>
+          <br>
+          <br>
+          <input [(ngModel)]="childSelectedAnimal.age">
+          <br>
+          <br>
+          <label>Enter Animal Diet:</label>
+          <br>
+          <br>
+          <input [(ngModel)]="childSelectedAnimal.diet">
+          <br>
+        </div>
+        <div class="col-md-6">
+          <label>Enter Animal Location:</label>
+          <br>
+          <br>
+          <input [(ngModel)]="childSelectedAnimal.location">
+          <br>
+          <br>
+          <label>Enter Animal Sex:</label>
+          <br>
+          <br>
+          <input [(ngModel)]="childSelectedAnimal.sex">
+          <br>
+          <br>
+          <label>Enter Animal Likes:</label>
+          <br>
+          <br>
+          <input [(ngModel)]="childSelectedAnimal.likes">
+          <br>
+          <br>
+          <label>Enter Animal Dislikes:</label>
+          <br>
+          <br>
+          <input [(ngModel)]="childSelectedAnimal.dislikes">
+          <br>
+        </div>
+        <button (click)="doneButtonClicked()">Finish and Save</button>
+      </div>
+      <br>
+      <br>
+      <br>
     </div>
-  <div>  
+  <div>
   `
 })
 

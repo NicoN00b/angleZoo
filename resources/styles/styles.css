@@ -10,6 +10,9 @@ button {
 h1 {
   text-align: center;
 }
+h2 {
+  text-align: center;
+}
 .container-fluid {
   display: flex;
   flex-direction: row;
@@ -31,8 +34,13 @@ h1 {
   font-weight: 400;
   align-content: space-around;
   align-items: center;
+  color: white;
 }
 .col-md-6 {
   align-items: center;
   text-align: center;
+}
+input {
+  color: black;
+
 }

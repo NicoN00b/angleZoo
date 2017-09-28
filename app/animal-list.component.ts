@@ -5,8 +5,14 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
   <div class="container-fluid">
+    <select class="filter" (change)="onChange($event.target.value)">
+      <option value="allAnimals" selected="selected">All Animals </option>
+      <option value="seniorCitizen">Senior Citizens </option>
+      <option value="youngGun">Young Guns </option>
+    </select>
+
     <div id="item">
-      <p [class]="localColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.species}}<br>
+      <p [class]="localColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | animalage:filterByAge">{{currentAnimal.species}}<br>
       {{currentAnimal.name}}
       <br>
       Age: {{currentAnimal.age}}
@@ -24,13 +30,13 @@ import { Animal } from './animal.model';
       <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button></p>
     </div>
   </div>
-
   `
 })
 
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
+  filterByAge: string = "allAnimals";
 
   localColor(currentAnimal){
    if (currentAnimal.location === "Savannah Simulacra"){
@@ -44,5 +50,9 @@ export class AnimalListComponent {
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByAge = optionFromMenu;
   }
 }

@@ -13,7 +13,7 @@ var forms_1 = require("@angular/forms");
 var animal_list_component_1 = require("./animal-list.component");
 var edit_animal_component_1 = require("./edit-animal.component");
 var new_animal_component_1 = require("./new-animal.component");
-var location_pipes_1 = require("./location.pipes");
+var animal_age_pipe_1 = require("./animal-age.pipe");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,7 +30,7 @@ AppModule = __decorate([
             animal_list_component_1.AnimalListComponent,
             edit_animal_component_1.EditAnimalComponent,
             new_animal_component_1.NewAnimalComponent,
-            location_pipes_1.LocationPipe
+            animal_age_pipe_1.AnimalAgePipe
         ],
         bootstrap: [app_component_1.AppComponent]
     })
